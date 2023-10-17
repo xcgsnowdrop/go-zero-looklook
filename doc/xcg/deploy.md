@@ -4,5 +4,8 @@
 - 重启redis服务 systemctl restart redis
 
 # 允许mysql远程服务访问
+- 腾讯云服务器防火墙需要设置放开对3306端口的访问限制
+- vim /etc/my.cnf.d/mysql-server.cnf && 修改bind-address=0.0.0.0
+- 重启mysql服务 systemctl restart mysqld
 
 # 
